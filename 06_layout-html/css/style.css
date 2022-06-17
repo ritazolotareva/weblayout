@@ -24,6 +24,143 @@ html {
     box-sizing: border-box;
 }
 
-* {
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    background-color: #E5E5E5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Muller Thin DEMO', sans-serif;
+    height: 1170px;
+}
+
+/* main page */
+
+.container {
+    margin: 0 auto;
+    padding: 30px 0 20px;
+    max-width: 1170px;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: 1170px;
+    text-align: center;
+}
+.top-header {
+    text-align: center;
+}
+
+
+.header-logo {
+    width: 261px;
+    height: 54px;
+}
+
+.top-header-link {
     
+}
+
+.contact-link {
+    display: inline;
+    margin: 0 540px 16px 40px;
+    
+    font-family: 'Muller ExtraBold DEMO', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #666666;
+}
+
+.bottom-header {
+display: block;
+    text-align: center;
+    margin: 0;
+    height: 70px;
+    width: 1170px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+/* .header-nav {
+    width: 1170px;
+    height: 70px;
+} */
+
+.header-list {
+    margin: 0;
+    padding: 0;
+}
+
+.header-item {
+    display: inline;
+    list-style-type: none;
+    text-align: center;
+}
+.header-link {
+}
+.header-btn {
+}
+.content {
+}
+.special-offers {
+}
+.section-title {
+}
+.sp-ofr-block {
+}
+.sp-ofr-name {
+}
+.sp-ofr-text {
+}
+.sp-ofr-dscr {
+}
+.about-us {
+}
+.about-us-text {
+}
+.services {
+}
+.services-list {
+}
+.services-item {
+}
+.services-link {
+}
+.services-text {
+}
+.adv-list {
+}
+.adv-item {
+}
+.adv-img {
+}
+.adv-text {
+}
+.accommodation-list {
+}
+.acm-item {
+}
+.acm-img {
+}
+.acm-cost {
+}
+.acm-name {
+}
+.acm-desc {
+}
+.acm-btn {
+}
+.acm-stars {
 }
