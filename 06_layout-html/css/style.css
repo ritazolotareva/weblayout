@@ -2,19 +2,21 @@
 
 @font-face {
 	font-family: 'Muller Thin DEMO';
-	src: url('fonts/MullerThinDEMO.eot');
+	src: url('../fonts/MullerThinDEMO.woff');
 	src: local('Muller Thin DEMO'), local('MullerThinDEMO'),
-		url('fonts/MullerThinDEMO.woff') format('woff');
-	font-weight: 100;
+        url('../fonts/MullerThinDEMO.woff') format('woff2'),
+		url('../fonts/MullerThinDEMO.woff') format('woff');
+	/* font-weight: 100; */
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Muller ExtraBold DEMO';
-	src: url('fonts/MullerExtraBoldDEMO.eot');
+	src: url('../fonts/MullerExtraBoldDEMO.woff');
 	src: local('Muller ExtraBold DEMO'), local('MullerExtraBoldDEMO'),
-		url('fonts/MullerExtraBoldDEMO.woff') format('woff');
-	font-weight: 800;
+        url('../fonts/MullerExtraBoldDEMO.woff') format('woff2'),
+		url('../fonts/MullerExtraBoldDEMO.woff') format('woff');
+	/* font-weight: 700; */
 	font-style: normal;
 }
 
@@ -22,12 +24,9 @@
 
 html {
     box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+    margin: 0 auto;
+    padding: 30px 0 20px;
+    max-width: 1170px;
     background-color: #E5E5E5;
 }
 
@@ -45,122 +44,223 @@ body {
     height: 1170px;
 }
 
-/* main page */
-
-.container {
-    margin: 0 auto;
-    padding: 30px 0 20px;
-    max-width: 1170px;
-}
-
-.header {
-    margin: 0 auto;
-    max-width: 1170px;
-    text-align: center;
-}
-.top-header {
-    text-align: center;
-}
-
-
-.header-logo {
-    width: 261px;
-    height: 54px;
-}
-
-.top-header-link {
-    
-}
-
-.contact-link {
-    display: inline;
-    margin: 0 540px 16px 40px;
-    
-    font-family: 'Muller ExtraBold DEMO', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #666666;
-}
-
-.bottom-header {
-display: block;
-    text-align: center;
-    margin: 0;
-    height: 70px;
-    width: 1170px;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-}
-
-/* .header-nav {
-    width: 1170px;
-    height: 70px;
-} */
-
-.header-list {
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
 
-.header-item {
-    display: inline;
+h2 {
+    font-family: 'Muller Thin DEMO';
+    margin-bottom: 20px;
+    padding-left: 45px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+/* main page */
+
+/* header */
+header {
+    margin-bottom: 70px;
+}
+
+.header {
+    display: flex;
     list-style-type: none;
-    text-align: center;
+    padding: 0;
+    margin: 0;
 }
-.header-link {
+
+.top-header-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 30px;
 }
+
+.contact-link {
+    padding-left: 40px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #666666;
+}
+
+.log-in {
+    position: relative;
+    left: 540px;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #CC9933;
+    background-image: url(../img/log-in-narrow.svg);
+    background-repeat: no-repeat;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.header-item {
+    padding-right: 45px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+}
+
+.header-item:first-child {
+    padding-left: 45px;
+}
+
+.header-item:last-child {
+    padding-right: 100px;
+}
+
 .header-btn {
+    position: relative;
+    display: inline-block;
+    left: auto;
+    color: #CC9933;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 10px 15px;
+    
 }
-.content {
+
+/* offers section */
+.sp-ofr-blocks {
+    /* display: inline-block; */
+    list-style-type: none;
+    /* vertical-align: top; */
 }
-.special-offers {
+
+.offer-bloks {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 15px;
+    font-family: sans-serif;
 }
-.section-title {
-}
-.sp-ofr-block {
-}
+
 .sp-ofr-name {
+    padding: 40px 108px 15px 45px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
 }
-.sp-ofr-text {
+
+.top-left-block {
+    width: 573px;
+    height: 258px;
+    padding-bottom: 24px;
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/ofr1.jpg);
+    background-repeat: no-repeat;
 }
+
+.right-block {
+    width: 573px;
+    height: 540px;
+    float: right;
+    background-image: url(../img/ofr3.jpg);
+    background-repeat: no-repeat;
+}
+
+.bottom-left-block {
+    width: 573px;
+    height: 258px;
+    background-image:linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/ofr2.jpg);
+    background-repeat: no-repeat;
+}
+
+.right-block-name {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 212px 229px 15px 45px;
+}
+
 .sp-ofr-dscr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #F0BF5F;
+    padding: 0 15px 0 45px;
+    background-image: url(../img/narrow.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
-.about-us {
+
+.sp-ofr-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    padding: 0 0 47px 45px;
 }
+
+.right-block-text {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+/* 'about us' section */
 .about-us-text {
+    width: 888px;
+    height: 192px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
 }
-.services {
-}
-.services-list {
-}
-.services-item {
-}
+
+/* services section */
 .services-link {
+    font-size: 20px;
+    line-height: 40px;
+    color: #CC9933;
+    padding-right: 15px;
+    background-image: url(../img/narrow.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
+
+.services-item {
+    display: block;
+    float:left;
+    /* margin: 0 25px 25px 0; */
+    width: 573px;
+    height: 330px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.srv-img {
+    width: 573px;
+    height: 165px;
+}
+
 .services-text {
+    font-size: 20px;
+    line-height: 32px;
+    color: black;
 }
-.adv-list {
-}
-.adv-item {
-}
-.adv-img {
-}
-.adv-text {
-}
-.accommodation-list {
-}
-.acm-item {
-}
-.acm-img {
-}
-.acm-cost {
-}
-.acm-name {
-}
-.acm-desc {
-}
-.acm-btn {
-}
-.acm-stars {
-}
+
+/* advantages section */
+
+/* accommodation section */
