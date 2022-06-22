@@ -2,32 +2,30 @@
 
 @font-face {
 	font-family: 'Muller Thin DEMO';
-	src: url('../fonts/MullerThinDEMO.woff');
+	src: url('../fonts/MullerThinDEMO.woff2');
 	src: local('Muller Thin DEMO'), local('MullerThinDEMO'),
-        url('../fonts/MullerThinDEMO.woff') format('woff2'),
+        url('../fonts/MullerThinDEMO.woff2') format('woff2'),
 		url('../fonts/MullerThinDEMO.woff') format('woff');
-	/* font-weight: 100; */
+	font-weight: 100;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Muller ExtraBold DEMO';
-	src: url('../fonts/MullerExtraBoldDEMO.woff');
+	src: url('../fonts/MullerExtraBoldDEMO.woff2');
 	src: local('Muller ExtraBold DEMO'), local('MullerExtraBoldDEMO'),
-        url('../fonts/MullerExtraBoldDEMO.woff') format('woff2'),
+        url('../fonts/MullerExtraBoldDEMO.woff2') format('woff2'),
 		url('../fonts/MullerExtraBoldDEMO.woff') format('woff');
-	/* font-weight: 700; */
+	font-weight: 700;
 	font-style: normal;
 }
 
 /* default */
-
 html {
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 30px 0 20px;
     max-width: 1170px;
-    background-color: #E5E5E5;
+    background-color: #F1F1F1;
 }
 
 a {
@@ -42,6 +40,11 @@ img {
 body {
     font-family: 'Muller Thin DEMO', sans-serif;
     height: 1170px;
+    padding: 30px 0 20px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 h1, h2, h3, p {
@@ -63,6 +66,13 @@ section {
     margin-bottom: 70px;
 }
 
+.blocks {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
 /* main page */
 
 /* header */
@@ -72,7 +82,6 @@ header {
 
 .header {
     display: flex;
-    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -117,7 +126,6 @@ header {
 
 .header-item {
     padding-right: 45px;
-    font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #666666;
@@ -132,22 +140,24 @@ header {
 }
 
 .header-btn {
-    position: relative;
-    display: inline-block;
-    left: auto;
+    width: 107px;
+    height: 42px;
+    margin-right: 40px;
+    padding: 0;
     color: #CC9933;
-    border: 1px solid #CC9933;
+    background-color: #fff;
+    border:1px solid #CC9933;
     border-radius: 10px;
-    background-color: #FFFFFF;
-    padding: 10px 15px;
-    
+}
+
+.second-btn {
+    width: 177px;
 }
 
 /* offers section */
 .sp-ofr-blocks {
-    /* display: inline-block; */
-    list-style-type: none;
-    /* vertical-align: top; */
+    padding: 0;
+    margin: 0;
 }
 
 .offer-bloks {
@@ -169,7 +179,7 @@ header {
     width: 573px;
     height: 258px;
     padding-bottom: 24px;
-    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/ofr1.jpg);
+    background-image: url(../img/darken.png), url(../img/ofr1.jpg);
     background-repeat: no-repeat;
 }
 
@@ -184,7 +194,7 @@ header {
 .bottom-left-block {
     width: 573px;
     height: 258px;
-    background-image:linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/ofr2.jpg);
+    background-image: url(../img/darken.png), url(../img/ofr2.jpg);
     background-repeat: no-repeat;
 }
 
@@ -230,7 +240,30 @@ header {
 }
 
 /* services section */
+
+.services-blocks {
+    padding: 0;
+    font-size: 0;
+}
+
+.services-item:nth-child(2n) {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.services-item {
+    margin: 0 24px 24px 0;
+    width: 573px;
+    height: 330px;
+}
+
+.services-item:nth-child(n+3) {
+    margin-bottom: 0;
+}
+
 .services-link {
+    padding: 0px 0 0 45px;
+    font-family: 'Muller Thin DEMO';
     font-size: 20px;
     line-height: 40px;
     color: #CC9933;
@@ -240,27 +273,153 @@ header {
     background-position: right bottom;
 }
 
-.services-item {
-    display: block;
-    float:left;
-    /* margin: 0 25px 25px 0; */
-    width: 573px;
-    height: 330px;
-    border-radius: 15px;
-    background-color: #FFFFFF;
+.services-text {
+    padding-left: 45px;
+    width: 402px;
+    height: 64px;
+    font-size: 16px;
+    line-height: 32px;
+    color: black;
 }
 
 .srv-img {
     width: 573px;
     height: 165px;
-}
-
-.services-text {
-    font-size: 20px;
-    line-height: 32px;
-    color: black;
+    margin-bottom: 26px;
 }
 
 /* advantages section */
 
+.adv-list {
+    padding: 0;
+    font-size: 0;
+    width: 1170px;
+}
+
+.adv-item {
+    margin: 0 22px 22px 0;
+    width: 276px;
+    height: 276px;
+}
+
+.adv-item:nth-child(4n) {
+    margin: 0;
+    margin-bottom: 22px;
+}
+
+.adv-item:nth-child(n+5) {
+    margin-bottom: 0;
+}
+
+.adv-img {
+    padding: 40px 0 10px 45px;
+}
+
+.adv-text {
+    width: 189px;
+    height: 128px;
+    padding-left: 45px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+}
+
 /* accommodation section */
+
+.accommodation-list {
+    padding: 0;
+    font-size: 0;
+}
+
+.acm-item {
+    margin: 0 24px 24px 0;
+    width: 374px;
+    height: 440px;
+}
+
+.acm-item:nth-child(3n) {
+    margin: 0;
+}
+
+.acm-item:nth-child(n+7) {
+    margin-bottom: 0;
+}
+
+.acm-item:last-child {
+    background-image: url(../img/acm9.png);
+}
+
+.others {
+    position: relative;
+    top: 373px;
+    left: 54px;
+    padding-right: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 200%;
+    font-style: bold;
+    color: white;
+    background: url(../img/white-narrow.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+}
+
+.acm-img {
+    margin-bottom: 32px;
+}
+
+.acm-cost {
+    padding: 0 0 16px 45px;
+    width: 190px;
+    height: 16px;
+    font-family: sans-serif;
+    font-style: thin;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.acm-name {
+    padding: 16px 0 16px 45px;
+    margin: 0;
+    width: 243px;
+    font-size: 13px;
+    line-height: 16px;
+    font-style: bold;
+    color: #000000;
+}
+
+.acm-desc {
+    padding: 0 0 20px 45px;
+    width: 190px;
+    height: 16px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
+}
+
+.acm-btn {
+    width: 100px;
+    height: 42px;
+    margin-left: 45px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.stars {
+    position: relative;
+    bottom: 100px;
+    right: 45px;
+    float: right;
+}
+
+.pale {
+    display: inline;
+    color: #999999;
+}
