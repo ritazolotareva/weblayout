@@ -357,7 +357,6 @@ header {
     font-family: sans-serif;
     font-size: 20px;
     line-height: 200%;
-    font-style: bold;
     color: white;
     background: url(../img/white-narrow.png);
     background-position: right bottom;
@@ -370,14 +369,22 @@ header {
 }
 
 .acm-cost {
-    padding: 0 0 16px 45px;
+    display: inline;
+    padding-left: 4px;
     width: 190px;
     height: 16px;
     font-family: sans-serif;
-    font-style: thin;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+}
+
+.pale {
+    display: inline;
+    padding-left: 45px;
+    color: #999999;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .acm-name {
@@ -386,7 +393,6 @@ header {
     width: 243px;
     font-size: 13px;
     line-height: 16px;
-    font-style: bold;
     color: #000000;
 }
 
@@ -417,9 +423,4 @@ header {
     bottom: 100px;
     right: 45px;
     float: right;
-}
-
-.pale {
-    display: inline;
-    color: #999999;
 }
