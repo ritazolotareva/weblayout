@@ -52,6 +52,11 @@ h1, h2, h3, p {
     padding: 0;
 }
 
+h1 {
+    visibility: hidden;
+    height: 1px;
+}
+
 h2 {
     font-family: 'Muller Thin DEMO';
     margin-bottom: 20px;
@@ -80,16 +85,9 @@ header {
     margin-bottom: 70px;
 }
 
-.header {
+.header-top {
     display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-.top-header-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	align-items: center;
     margin: 0;
     margin-bottom: 30px;
 }
@@ -117,11 +115,17 @@ header {
 
 .header-nav {
     display: flex;
-    justify-content: left;
+    /* justify-content: center; */
     align-items: center;
     height: 70px;
     border-radius: 15px;
     background-color: #fff;
+}
+
+.navigation {
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .header-item {
@@ -136,7 +140,7 @@ header {
 }
 
 .header-item:last-child {
-    padding-right: 100px;
+    padding-right: 50px;
 }
 
 .header-btn {
@@ -156,13 +160,22 @@ header {
 
 /* offers section */
 .sp-ofr-blocks {
-    padding: 0;
-    margin: 0;
+    display: flex;
+    min-height: 540px;
+}
+
+.special-block {
+    display: flex;
+    flex-direction: column;
+    width: 1170px;
+}
+
+.special-block:not(:last-child) {
+    margin-right: 30px;
 }
 
 .offer-bloks {
-    display: inline-block;
-    vertical-align: top;
+    flex: 1;
     border-radius: 15px;
     font-family: sans-serif;
 }
@@ -175,7 +188,7 @@ header {
     color: #FFFFFF;
 }
 
-.top-left-block {
+.left-top-block {
     width: 573px;
     height: 258px;
     padding-bottom: 24px;
@@ -183,18 +196,15 @@ header {
     background-repeat: no-repeat;
 }
 
-.right-block {
-    width: 573px;
-    height: 540px;
-    float: right;
-    background-image: url(../img/ofr3.jpg);
-    background-repeat: no-repeat;
-}
-
-.bottom-left-block {
+.left-bottom-block {
     width: 573px;
     height: 258px;
     background-image: url(../img/darken.png), url(../img/ofr2.jpg);
+    background-repeat: no-repeat;
+}
+
+.right-block {
+    background-image: url(../img/ofr3.jpg);
     background-repeat: no-repeat;
 }
 
@@ -246,23 +256,43 @@ header {
     font-size: 0;
 }
 
+.services-item {
+    padding-top: 190px;
+    width: 573px;
+    height: 165px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 572px 165px;
+    margin: 0 24px 24px 0;
+}
+
 .services-item:nth-child(2n) {
     margin: 0;
     margin-bottom: 24px;
-}
-
-.services-item {
-    margin: 0 24px 24px 0;
-    width: 573px;
-    height: 330px;
 }
 
 .services-item:nth-child(n+3) {
     margin-bottom: 0;
 }
 
+.first-block {
+    background-image: url(../img/srv1.png);
+}
+
+.second-block {
+    background-image: url(../img/srv2.png);
+}
+
+.third-block {
+    background-image: url(../img/srv3.png);
+}
+
+.forth-block {
+    background-image: url(../img/srv4.png);
+}
+
 .services-link {
-    padding: 0px 0 0 45px;
+    padding: 0 0 0 45px;
     font-family: 'Muller Thin DEMO';
     font-size: 20px;
     line-height: 40px;

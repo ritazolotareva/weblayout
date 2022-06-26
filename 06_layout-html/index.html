@@ -11,13 +11,14 @@
 
 <body>
     <header>
-        <ul class="header">
-            <li class="top-header-link"><a class="header-logo" href="#"><img src="img/logo.png" alt="Lagoona"></a></li>
-            <li class="top-header-link"><a class="contact-link" href="tel:+74953225448">+7 495 322 54 48</a></li>
-            <li class="top-header-link"><a class="log-in" href="#">Личный кабинет</a></li>
-        </ul>
+        <div class="header-top">
+            <a class="header-logo" href="#"><img src="img/logo.png" alt="Lagoona"></a>
+            <a class="contact-link" href="tel:+74953225448">+7 495 322 54 48</a>
+            <a class="log-in" href="#">Личный кабинет</a>
+        </div>
+        <div>
         <nav class="header-nav">
-            <ul class="header">
+            <ul class="navigation">
                 <li class="header-item">
                     <a href="#about-us" class="header-link">О нас</a>
                 </li>
@@ -40,27 +41,33 @@
             <button type="button" class="header-btn first-btn">Хочу тур</button>
             <button type="button" class="header-btn second-btn">Обратный звонок</button>
         </nav>
+    </div>
     </header>
     <main>
+        <h1>Lagoona website</h1>
         <section>
             <h2>Спецпредложения</h2>
-            <ul class="sp-ofr-blocks">
-                <li class="offer-bloks top-left-block">
-                    <h3 class="sp-ofr-name">Мальдивские <br> острова</h3>
-                    <p class="sp-ofr-text">от 55 000</p>
-                    <a href="#" class="sp-ofr-dscr">Подробнее</a>
-                </li>
-                <li class="offer-bloks right-block">
-                    <h3 class="sp-ofr-name right-block-name">Номера категории люкс</h3>
-                    <p class="sp-ofr-text right-block-text">от 5 000</p>
-                    <a href="#" class="sp-ofr-dscr">Подробнее</a>
-                </li>
-                <li class="offer-bloks bottom-left-block">
-                    <h3 class="sp-ofr-name">Горящий <br> тур на остров Крит</h3>
-                    <p class="sp-ofr-text">от 30 000</p>
-                    <a href="#" class="sp-ofr-dscr">Подробнее</a>
-                </li>
-            </ul>
+            <div class="sp-ofr-blocks">
+                <div class="special-block">
+                    <article class="offer-bloks left-top-block">
+                        <h3 class="sp-ofr-name">Мальдивские <br> острова</h3>
+                        <p class="sp-ofr-text">от 55 000</p>
+                        <a href="#" class="sp-ofr-dscr">Подробнее</a>
+                    </article>
+                    <article class="offer-bloks left-bottom-block">
+                        <h3 class="sp-ofr-name">Горящий <br> тур на остров Крит</h3>
+                        <p class="sp-ofr-text">от 30 000</p>
+                        <a href="#" class="sp-ofr-dscr">Подробнее</a>
+                    </article>
+                </div>
+                <div class="special-block">
+                    <article class="offer-bloks right-block">
+                        <h3 class="sp-ofr-name right-block-name">Номера категории люкс</h3>
+                        <p class="sp-ofr-text right-block-text">от 5 000</p>
+                        <a href="#" class="sp-ofr-dscr">Подробнее</a>
+                    </article>
+                </div>
+            </div>
         </section>
         <section id="about-us">
             <h2>О нас</h2>
@@ -74,27 +81,26 @@
         <section id="services">
             <h2>Услуги</h2>
             <ul class="services-blocks">
-                <li class="blocks services-item">
-                    <img src="img/srv1.png" alt="Exclusive service" class="srv-img">
-                    <a href="" class="services-link">Эксклюзивное обслуживание</a>
-                    <p class="services-text">Равным образом постоянный количественный рост и сфера нашей активности
-                    </p>
+                <li class="blocks services-item first-block">
+                    <!-- <img src="img/srv1.png" alt="Exclusive service" class="srv-img"> -->
+                    <h3><a href="#" class="services-link">Эксклюзивное обслуживание</a></h3>
+                    <p class="services-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
                 </li>
-                <li class="blocks services-item">
-                    <img src="img/srv2.png" alt="Saunas, swimming pools, baths, fitness rooms" class="srv-img">
-                    <a href="" class="services-link">Сауны, бассейны, бани, фитнес-залы</a>
+                <li class="blocks services-item second-block">
+                    <!-- <img src="img/srv2.png" alt="Saunas, swimming pools, baths, fitness rooms" class="srv-img"> -->
+                    <h3><a href="#" class="services-link">Сауны, бассейны, бани, фитнес-залы</a></h3>
                     <p class="services-text">Не следует, однако забывать, что начало повседневной работы по
                         формированию позиции</p>
                 </li>
-                <li class="blocks services-item">
-                    <img src="img/srv3.png" alt="Banquet halls for rent" class="srv-img">
-                    <a href="" class="services-link">Аренда банкетных залов</a>
+                <li class="blocks services-item third-block">
+                    <!-- <img src="img/srv3.png" alt="Banquet halls for rent" class="srv-img"> -->
+                    <h3><a href="#" class="services-link">Аренда банкетных залов</a></h3>
                     <p class="services-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие
                         различных форм.</p>
                 </li>
-                <li class="blocks services-item">
-                    <img src="img/srv4.png" alt="Guarded parking lots" class="srv-img">
-                    <a href="" class="services-link">Охраняемые автомобильные стоянки</a>
+                <li class="blocks services-item forth-block">
+                    <!-- <img src="img/srv4.png" alt="Guarded parking lots" class="srv-img"> -->
+                    <h3><a href="#" class="services-link">Охраняемые автомобильные стоянки</a></h3>
                     <p class="services-text">Не следует, однако забывать, что начало повседневной работы по
                         формированию позиции</p>
                 </li>
@@ -147,107 +153,115 @@
             <ul class="accommodation-list">
                 <li class="blocks acm-item">
                     <img src="img/acm1.png" alt="Вариант размещения" class="acm-img">
-                    <p class="pale">от</p><p class="acm-cost"><b>4 698</b> / ночь</p>
+                    <p class="pale">от</p>
+                    <p class="acm-cost"><b>4 698</b> / ночь</p>
                     <p class="acm-name"><strong>Lagoona española</strong></p>
                     <p class="acm-desc">Барселона, Испания</p>
                     <button class="acm-btn">Номера</button>
-                        <img src="img/i-star-empty.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star-empty.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
                 </li>
                 <li class="blocks acm-item">
                     <img src="img/acm2.png" alt="Вариант размещения" class="acm-img">
-                    <p class="pale">от</p><p class="acm-cost"><b>6 320</b> / ночь</p>
+                    <p class="pale">от</p>
+                    <p class="acm-cost"><b>6 320</b> / ночь</p>
                     <p class="acm-name"><strong>Lagoona mentira piadosa</strong></p>
                     <p class="acm-desc">Барселона, Испания</p>
                     <button class="acm-btn">Номера</button>
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
                 </li>
                 <li class="blocks acm-item">
                     <img src="img/acm3.png" alt="Вариант размещения" class="acm-img">
-                    <p class="pale">от</p><p class="acm-cost"><b>6 505</b> / ночь</p>
+                    <p class="pale">от</p>
+                    <p class="acm-cost"><b>6 505</b> / ночь</p>
                     <p class="acm-name"><strong>Lagoona mentira piadosa</strong></p>
                     <p class="acm-desc">Барселона, Испания</p>
                     <button class="acm-btn">Номера</button>
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
                 </li>
                 <li class="blocks acm-item">
                     <img src="img/acm4.png" alt="Вариант размещения" class="acm-img">
-                    <p class="pale">от</p><p class="acm-cost"><b>5 148</b> / ночь</p>
+                    <p class="pale">от</p>
+                    <p class="acm-cost"><b>5 148</b> / ночь</p>
                     <p class="acm-name"><strong>Lagoona son típicas</strong></p>
                     <p class="acm-desc">Барселона, Испания</p>
                     <button class="acm-btn">Номера</button>
-                        <img src="img/i-star-empty.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star-empty.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
                 </li>
                 <li class="blocks acm-item">
                     <img src="img/acm5.png" alt="Вариант размещения" class="acm-img">
-                    <p class="pale">от</p><p class="acm-cost"><b>6 457</b> / ночь</p>
+                    <p class="pale">от</p>
+                    <p class="acm-cost"><b>6 457</b> / ночь</p>
                     <p class="acm-name"><strong>Lagoona empujar la creatividad</strong></p>
                     <p class="acm-desc">Барселона, Испания</p>
                     <button class="acm-btn">Номера</button>
-                        <img src="img/i-star-empty.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star-empty.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
                 </li>
                 <li class="blocks acm-item">
                     <img src="img/acm6.png" alt="Вариант размещения" class="acm-img">
-                    <p class="pale">от</p><p class="acm-cost"><b>6 824</b> / ночь</p>
+                    <p class="pale">от</p>
+                    <p class="acm-cost"><b>6 824</b> / ночь</p>
                     <p class="acm-name"><strong>Lagoona suerte siguió siempre</strong></p>
                     <p class="acm-desc">Барселона, Испания</p>
                     <button class="acm-btn">Номера</button>
-                        <img src="img/i-star-empty.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star-empty.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
                 </li>
                 <li class="blocks acm-item">
                     <img src="img/acm7.png" alt="Вариант размещения" class="acm-img">
-                    <p class="pale">от</p><p class="acm-cost"><b>6 254</b> / ночь</p>
+                    <p class="pale">от</p>
+                    <p class="acm-cost"><b>6 254</b> / ночь</p>
                     <p class="acm-name"><strong>Lagoona de la guerra</strong></p>
                     <p class="acm-desc">Барселона, Испания</p>
                     <button class="acm-btn">Номера</button>
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
                 </li>
                 <li class="blocks acm-item">
                     <img src="img/acm8.png" alt="Вариант размещения" class="acm-img">
-                    <p class="pale">от</p><p class="acm-cost"><b>6 320</b> / ночь</p>
+                    <p class="pale">от</p>
+                    <p class="acm-cost"><b>6 320</b> / ночь</p>
                     <p class="acm-name"><strong>Lagoona el retorno</strong></p>
                     <p class="acm-desc">Барселона, Испания</p>
                     <button class="acm-btn">Номера</button>
-                        <img src="img/i-star-empty.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
-                        <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star-empty.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
+                    <img src="img/i-star.png" alt="рейтинг" class="stars">
                 </li>
                 <li class="blocks acm-item">
                     <a href="#" class="others">Посмотреть все варианты</a>
