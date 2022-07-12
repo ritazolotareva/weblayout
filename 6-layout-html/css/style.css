@@ -39,7 +39,6 @@ img {
 
 body {
     font-family: 'Muller Thin DEMO', sans-serif;
-    height: 1170px;
     padding: 30px 0 20px;
 }
 
@@ -78,6 +77,11 @@ section {
     border-radius: 15px;
 }
 
+.flex {
+    display: flex;
+    align-items: center; 
+}
+
 /* main page */
 
 /* header */
@@ -86,8 +90,6 @@ header {
 }
 
 .header-top {
-    display: flex;
-	align-items: center;
     margin: 0;
     margin-bottom: 30px;
 }
@@ -102,8 +104,6 @@ header {
 }
 
 .log-in {
-    /* position: relative; */
-    /* left: 540px; */
     margin-left: auto;
     padding-left: 30px;
     font-size: 12px;
@@ -114,7 +114,6 @@ header {
 }
 
 .header-nav {
-    /* display: flex;*/
     max-width: 1170px;
     height: 70px;
     border-radius: 15px;
@@ -125,9 +124,6 @@ header {
 }
 
 .navigation, .header-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -135,8 +131,7 @@ header {
 }
 
 .header-item {
-    /* display: inline-block; */
-    /* vertical-align: center; */
+    flex-wrap: wrap;
     padding-right: 45px;
     font-size: 16px;
     line-height: 16px;
@@ -148,7 +143,7 @@ header {
 }
 
 .header-item:nth-child(6n) {
-    padding-right: 80px;
+    padding-right: 100px;
 }
 
 .header-btn {
