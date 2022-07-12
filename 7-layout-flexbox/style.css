@@ -1,0 +1,253 @@
+html {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 1170px;
+  background-color: #F1F1F1;
+}
+  
+body {
+  width: 1170px;
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, p{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+header {
+  padding: 36px 0;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* header */
+.header-top {
+  margin-bottom: 30px;
+}
+
+.contact-link {
+  margin-left: 40px;
+  color: #666666;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.log-in {
+  margin-left: auto;
+  padding-left: 30px;
+  color: #CC9933;
+  background-image: url(img/log-in-narrow.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.navigation-list {
+  width: 1170px;
+  min-height: 70px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.navigation-item {
+  padding-left: 45px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.header-btn {
+  margin-right: 40px;
+  padding: 13px 20px;
+  text-align: center;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+}
+
+.header-btn:not(:last-child) {
+  margin-left: 115px;
+}
+
+.buttom {
+  font-size: 16px;
+  color: #CC9933;
+}
+
+/* offers */
+h1 {
+  padding-left: 45px;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.offer-blocks {
+  min-height: 540px;
+  align-items: stretch;
+}
+
+.left-blocks {
+  margin-right: 24px;
+} 
+
+.left-top-block {
+  margin-bottom: 24px;
+  width: 573px;
+  min-height: 258px;
+  border-radius: 15px;
+  background-image: url(../img/darken.png), url(../img/ofr1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.left-bottom-block {
+  width: 573px;
+  min-height: 258px;
+  border-radius: 15px;
+  background-image: url(../img/darken.png), url(../img/ofr2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right-block {
+  width: 573px;
+  min-height: 540px;
+  border-radius: 15px;
+  background-image: url(../img/ofr3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offer-name {
+  padding: 40px 108px 15px 45px;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.big-offer-name {
+  padding-top: 212px;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.offer-price {
+  display: block;
+  padding: 0 0 47px 45px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.big-offer-price {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.offer-more {
+    padding: 0 15px 0 45px;
+    font-size: 16px; 
+    line-height: 16px;
+    color: #F0BF5F;
+    background-image: url(../img/narrow.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/* about us */
+
+/* services */
+.services {
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.services-blocks {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 190px;
+  width: 573px;
+  min-height: 130px;
+  border-radius: 15px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 572px 165px;
+}
+
+.services-blocks:not(:nth-child(2n)) {
+  margin-right: 24px;
+}
+
+.services-blocks:nth-child(-n+2) {
+  margin-bottom: 24px;
+}
+
+.services-link {
+  padding:0 20px 5px 45px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #CC9933;
+  background-image: url(../img/narrow.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.services-text {
+  padding: 0 126px 35px 45px;
+  font-size: 16px;
+  line-height: 32px;
+  color: black;
+}
+
+.first-srv-block {
+  background-image: url(../img/srv1.png);
+}
+
+.second-srv-block {
+  background-image: url(../img/srv3.png);
+}
+
+.third-srv-block {
+  background-image: url(../img/srv2.png);
+}
+
+.forth-srv-block {
+  background-image: url(../img/srv4.png);
+}
