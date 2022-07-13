@@ -1,3 +1,23 @@
+@font-face {
+	font-family: 'Muller Ultra Light';
+	src: url('../fonts/MullerUltraLight.woff2');
+	src: local('Muller Ultra Light'), local('MullerUltraLight'),
+        url('../fonts/MullerUltraLight.woff2') format('woff2'),
+		url('../fonts/MullerUltraLight.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller Medium';
+	src: url('../fonts/MullerMedium.woff2');
+	src: local('Muller Medium'), local('MullerMedium'),
+        url('../fonts/MullerMedium.woff2') format('woff2'),
+		url('../fonts/MullerMedium.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
 html {
   box-sizing: border-box;
   margin: 0 auto;
@@ -7,7 +27,7 @@ html {
   
 body {
   width: 1170px;
-  font-family: sans-serif;
+  font-family: 'Muller Ultra Light', sans-serif;
 }
 
 a {
@@ -32,6 +52,8 @@ h1, h2, h3, h4, p{
 
 h1, h2 {
   margin-bottom: 20px;
+  padding-left: 45px;
+
 }
 
 button {
@@ -77,6 +99,7 @@ section {
 }
 
 .navigation-list {
+  flex-wrap: wrap;
   width: 1170px;
   min-height: 70px;
   background-color: #fff;
@@ -84,32 +107,32 @@ section {
 }
 
 .navigation-item {
-  padding-left: 45px;
+  padding: 27px 0 27px 45px;
   font-size: 16px;
   line-height: 16px;
   color: #666666;
 }
 
 .header-btn {
-  margin-right: 40px;
+  margin:14px 0 14px 45px;
   padding: 13px 20px;
   text-align: center;
   border: 1px solid #CC9933;
   border-radius: 10px;
 }
 
-.header-btn:not(:last-child) {
-  margin-left: 115px;
-}
+/* .header-btn:not(:last-child) {
+  margin-left: 100px;
+} */
 
 .buttom {
+  
   font-size: 16px;
   color: #CC9933;
 }
 
 /* offers */
 h1 {
-  padding-left: 45px;
   font-size: 40px;
   line-height: 40px;
   color: #333333;
@@ -200,6 +223,7 @@ h1 {
 
 .services-blocks {
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
   padding-top: 190px;
   width: 573px;
@@ -250,4 +274,152 @@ h1 {
 
 .forth-srv-block {
   background-image: url(../img/srv4.png);
+}
+
+/* advantages */
+.container {
+  /* height: 574px; */
+  /* flex-direction: column; */
+  /* justify-content:space-between; */
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.adv-block {
+  width: 276px;
+  min-height: 276px;
+  background-color: white;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: 45px 30px;
+}
+
+.adv-block:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
+
+.adv-block:not(:nth-child(n+5)) {
+  margin-bottom: 22px;
+}
+
+.adv-text {
+  margin: 116px 42px 32px 45px;
+}
+
+.first-adv {
+  background-image: url(../img/1adv.jpg);
+}
+
+.second-adv {
+  background-image: url(../img/2adv.jpg);
+}
+
+.third-adv {
+  background-image: url(../img/3adv.jpg);
+}
+
+.fourth-adv {
+  background-image: url(../img/4adv.jpg);
+}
+
+.fifth-adv { 
+  background-image: url(../img/5adv.jpg);
+}
+
+.sixth-adv {
+  background-image: url(../img/6adv.jpg);
+}
+
+.seventh-adv {
+  background-image: url(../img/7adv.jpg);
+}
+
+.eighth-adv {
+  background-image: url(../img/8adv.jpg);
+}
+
+/* accommodation */
+.accommodation-list {
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.acm-item {
+  width: 374px;
+  min-height: 440px;
+  background-color: white;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+}
+
+.acm-item:not(:nth-child(n+7)) {
+  margin-bottom: 24px;
+}
+
+.first-acm {
+  background-image: url(img/acm1.png);
+}
+
+.second-acm {
+  background-image: url(img/acm2.png);
+}
+
+.third-acm {
+  background-image: url(img/acm3.png);
+}
+
+.forth-acm {
+  background-image: url(img/acm4.png);
+}
+
+.fifth-acm {
+  background-image: url(img/acm5.png);
+}
+
+.sixth-acm {
+  background-image: url(img/acm6.png);
+}
+
+.seventh-acm {
+  background-image: url(img/acm7.png);
+}
+
+.eighth-acm {
+  background-image: url(img/acm8.png);
+}
+
+.ninth-acm {
+  background-image: url(img/acm9.png);
+}
+
+.accommodation-content {
+  padding: 250px 45px 50px 45px;
+}
+
+.acm-price {
+  margin-right: 52px;
+}
+
+.pale {
+  display: inline;
+  padding-right: 4px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+h4 {
+  margin: 16px 0;
+}
+
+address {
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.accommodation-button {
+  padding: 13px 20px;
+  color: #CC9933;
+  border-color: #CC9933;
 }
