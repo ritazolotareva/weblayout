@@ -278,9 +278,6 @@ h1 {
 
 /* advantages */
 .container {
-  /* height: 574px; */
-  /* flex-direction: column; */
-  /* justify-content:space-between; */
   flex-wrap: wrap;
   align-items: stretch;
 }
