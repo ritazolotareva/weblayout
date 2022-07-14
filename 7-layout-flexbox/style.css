@@ -342,19 +342,24 @@ h1 {
 .accommodation-list {
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-between;
+}
+
+.acm-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .acm-item {
   width: 374px;
   min-height: 440px;
+  margin-right: 24px;
+  margin-bottom: 24px;
   background-color: white;
   border-radius: 15px;
   background-repeat: no-repeat;
 }
 
-.acm-item:not(:nth-child(n+7)) {
-  margin-bottom: 24px;
+#accommodation {
+  margin-bottom: 50px;
 }
 
 .first-acm {
@@ -391,6 +396,7 @@ h1 {
 
 .ninth-acm {
   background-image: url(img/acm9.png);
+  background-size:cover;
 }
 
 .accommodation-content {
@@ -421,5 +427,21 @@ address {
 .accommodation-button {
   padding: 13px 20px;
   color: #CC9933;
-  border-color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 15px;
 }
+
+.accommodation-link {
+  position: relative;
+  top: 374px;
+  left: 54px;
+  padding-right: 15px;
+  font-family: 'Muller Medium';
+  font-size: 20px;
+  line-height: 200%;
+  color: white;
+  background: url(../img/white-narrow.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
