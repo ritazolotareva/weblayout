@@ -14,7 +14,7 @@
 	src: local('Muller Medium'), local('MullerMedium'),
         url('../fonts/MullerMedium.woff2') format('woff2'),
 		url('../fonts/MullerMedium.woff') format('woff');
-	font-weight: 700;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -53,7 +53,16 @@ h1, h2, h3, h4, p{
 h1, h2 {
   margin-bottom: 20px;
   padding-left: 45px;
+}
 
+h2 {
+  color: #333333;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+h3 {
+  font-family: 'Muller Medium', sans-serif;
 }
 
 button {
@@ -65,7 +74,8 @@ button {
 }
 
 header {
-  padding: 36px 0;
+  margin-bottom: 70px;
+  padding-top: 30px;
 }
 
 section {
@@ -84,6 +94,7 @@ section {
 
 .contact-link {
   margin-left: 40px;
+  font-family: 'Muller Medium', sans-serif;
   color: #666666;
   font-size: 20px;
   line-height: 20px;
@@ -120,10 +131,6 @@ section {
   border: 1px solid #CC9933;
   border-radius: 10px;
 }
-
-/* .header-btn:not(:last-child) {
-  margin-left: 100px;
-} */
 
 .buttom {
   
@@ -215,6 +222,12 @@ h1 {
 
 /* about us */
 
+.description {
+  width: 888px;
+  font-size: 16px;
+  line-height: 32px;
+}
+
 /* services */
 .services {
   flex-wrap: wrap;
@@ -250,10 +263,11 @@ h1 {
   color: #CC9933;
   background-image: url(../img/narrow.png);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right top;
 }
 
 .services-text {
+  width: 402px;
   padding: 0 126px 35px 45px;
   font-size: 16px;
   line-height: 32px;
@@ -278,6 +292,7 @@ h1 {
 
 /* advantages */
 .container {
+  width: 1170px;
   flex-wrap: wrap;
   align-items: stretch;
 }
@@ -300,7 +315,10 @@ h1 {
 }
 
 .adv-text {
+  width: 190px;
   margin: 116px 42px 32px 45px;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .first-adv {
@@ -337,12 +355,15 @@ h1 {
 
 /* accommodation */
 .accommodation-list {
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   align-items: stretch;
+  height: 1450px;
+  /* width: 1170px; */
 }
 
 .acm-item:nth-child(3n) {
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 .acm-item {
@@ -394,10 +415,11 @@ h1 {
 .ninth-acm {
   background-image: url(img/acm9.png);
   background-size:cover;
+  height: 450px;
 }
 
 .accommodation-content {
-  padding: 250px 45px 50px 45px;
+  padding: 250px 45px 45px 45px;
 }
 
 .acm-price {
@@ -414,11 +436,19 @@ h1 {
 
 h4 {
   margin: 16px 0;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 address {
   font-style: normal;
   margin-bottom: 20px;
+}
+
+.accommodation-adress {
+  color: #999999;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .accommodation-button {
