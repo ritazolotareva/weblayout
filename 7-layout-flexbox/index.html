@@ -2,281 +2,404 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="base-flexbox.css">
-    <title>Lagoona2</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="base-flexbox.css" />
+  <title>Lagoona2</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-top flex">
-            <a href=""><img src="#" alt="Lagoona-сеть отелей"></a>
-            <a class="contact-link" href="tel:+74953225448">+7&nbsp;495&nbsp;322&nbsp;54&nbsp;48</a>
-            <a class="log-in" href="">Личный&nbsp;кабинет</a>
+  <header>
+    <div class="header-top flex">
+      <a href=""><img src="img/logo.png" alt="Lagoona-сеть отелей"/></a>
+      <a class="contact-link" href="tel:+74953225448">+7&nbsp;495&nbsp;322&nbsp;54&nbsp;48</a>
+      <a class="log-in" href="#">Личный&nbsp;кабинет</a>
+    </div>
+    <nav class="header-navigation flex">
+      <ul class="navigation-list flex">
+        <li class="navigation-item">
+          <a href="#about-us">О&nbsp;нас</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#services">Услуги</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#advantages">Преимущества</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#accommodation">Размещение</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#blog">Блог</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#contacts">Контакты</a>
+        </li>
+      </ul>
+      <span class="header-button flex">
+        <button class="button" type="button">Хочу&nbsp;тур</button>
+        <button class="button" type="button">Обратный&nbsp;звонок</button>
+      </span>
+    </nav>
+  </header>
+  <main>
+    <section id="offers">
+      <h1>Спецпредложения</h1>
+      <div class="offer-blocks flex">
+        <div class="left-blocks">
+          <article class="offer-article left-top-block">
+            <h3 class="offer-name">
+              Мальдивские острова
+            </h3>
+            <span class="offer-price">от 55 000</span>
+            <a class="offer-more" href="#">Подробнее</a>
+          </article>
+          <article class="offer-article left-bottom-block">
+            <h3 class="offer-name">
+              Горящий тур&nbsp;на&nbsp;остров&nbsp;Крит
+            </h3>
+            <span class="offer-price">от 30 000</span>
+            <a class="offer-more" href="#">Подробнее</a>
+          </article>
         </div>
-        <nav class="header-navigation flex">
-            <ul class="navigation-list flex">
-                <li class="navigation-item"><a href="#about-us">О&nbsp;нас</a></li>
-                <li class="navigation-item"><a href="#services">Услуги</a></li>
-                <li class="navigation-item"><a href="#advantages">Преимущества</a></li>
-                <li class="navigation-item"><a href="#accommodation">Размещение</a></li>
-                <li class="navigation-item"><a href="#blog">Блог</a></li>
-                <li class="navigation-item"><a href="#contacts">Контакты</a></li>
-            </ul>
-            <span class="header-button flex">
-                <button type="button">Хочу&nbsp;тур</button>
-                <button type="button">Обратный&nbsp;звонок</button>
-            </span>
-        </nav>
-    </header>
-    <main>
-        <section id="offers">
-            <h1>Спецпредложения</h1>
-            <div class="offer-blocks flex">
-                <div class="left-blocks">
-                    <article class="offer-article left-top-block">
-                        <h3 class="offer-name">Мальдивские острова</h3>
-                        <span class="offer-price">от 55 000</span>
-                        <a class="offer-more" href="#">Подробнее</a>
-                    </article>
-                    <article class="offer-article left-bottom-block">
-                        <h3 class="offer-name">Горящий тур на остров Крит</h3>
-                        <span class="offer-price">от 30 000</span>
-                        <a class="offer-more" href="#">Подробнее</a>
-                    </article>
-                </div>
-                <article class="offer-article right-block">
-                    <h3 class="big-offer-name offer-name">Номера категории люкс</h3>
-                    <span class="big-offer-price offer-price">от 5 000</span>
-                    <a class="offer-more" href="#">Подробнее</a>
-                </article>
-            </div>
-        </section>
-        <section id="about-us">
-            <h2>О нас</h2>
-            <p class="description">Идейные соображения высшего порядка, а также сложившаяся структура организации
-                влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным
-                потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм
-                деятельности представляет собой интересный эксперимент проверки системы обучения кадров,
-                соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют
-                определения и уточнения существенных финансовых и административных условий.</p>
-        </section>
-        <section id="services">
-            <h2>Услуги</h2>
-            <div class="services flex">
-                <article class="services-block first-srv-block flex">
-                    <h3><a class="services-link" href="#">Эксклюзивное обслуживание</a></h3>
-                    <p class="services-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
-                </article>
-                <article class="services-block second-srv-block flex">
-                    <h3><a class="services-link" href="#">Аренда банкетных залов</a></h3>
-                    <p class="services-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие
-                        различных форм</p>
-                </article>
-                <article class="services-block third-srv-block flex">
-                    <h3><a class="services-link" href="#">Сауны, бассейны, бани, фитнес-залы</a></h3>
-                    <p class="services-text">Не следует, однако забывать, что начало повседневной работы по
-                        формированию позиции</p>
-                </article>
-                <article class="services-block forth-srv-block flex">
-                    <h3><a class="services-link" href="#">Охраняемые автомобильные стоянки</a></h3>
-                    <p class="services-text">Не следует, однако забывать, что начало повседневной работы по формированию
-                        позиции</p>
-                </article>
-            </div>
-        </section>
-        <section id="advantages">
-            <h2>Преимущества</h2>
-            <ul class="container flex">
-                <li class="adv-block first-adv">
-                    <p class="adv-text">Идейные соображения высшего порядка,
-                        а&nbsp;также постоянный количественный рост</p>
-                </li>
-                <li class="adv-block second-adv">
-                    <p class="adv-text">Равным образом рамки и&nbsp;место обучения кадров способствует подготовки
-                        сотрудника</p>
-                </li>
-                <li class="adv-block third-adv">
-                    <p class="adv-text">Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
-                </li>
-                <li class="adv-block fourth-adv">
-                    <p class="adv-text">Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения услуг нашего
-                        сервиса</p>
-                </li>
-                <li class="adv-block fifth-adv">
-                    <p class="adv-text">Таким образом реализация плановых заданий играет важную роль для понимания</p>
-                </li>
-                <li class="adv-block sixth-adv">
-                    <p class="adv-text">Повседневная практика показывает, что дальнейшее развитие различных</p>
-                </li>
-                <li class="adv-block seventh-adv">
-                    <p class="adv-text">Повседневная практика показывает, что сложившаяся структура организации</p>
-                </li>
-                <li class="adv-block eighth-adv">
-                    <p class="adv-text">Значимость этого настолько очевидна, что консультация наших экспертов
-                        помогает</p>
-                </li>
-            </ul>
-        </section>
-        <section id="accommodation">
-            <h2>Размещение</h2>
-            <ul class="accommodation-list flex">
-                <li class="acm-item first-acm">
-                    <article class="accommodation-content flex">
-                        <img src="#" alt="Lagoona española" class="acm-img">
-                        <span class="acm-price">
-                            от <b>4 698</b>&nbsp;/&nbsp;ночь
-                        </span>
-                        <span class="stars">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star-empty.png" alt="рейтинг">
-                        </span>
-                        <h4>Lagoona española</h4>
-                        <address class="accommodation-adress">Барселона, Испания</address>
-                        <button class="accommodation-button">Номера</button>
-                    </article>
-                </li>
-                <li class="acm-item second-acm">
-                    <article class="accommodation-content flex">
-                        <img src="#" alt="Вариант размещения" class="acm-img">
-                        <span class="acm-price">
-                            от <b>6 320</b>&nbsp;/&nbsp;ночь
-                        </span>
-                        <span class="stars">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                        </span>
-                        <h4>Lagoona mentira piadosa</h4>
-                        <address class="accommodation-adress">Барселона, Испания</address>
-                        <button class="accommodation-button">Номера</button>
-                    </article>
-                </li>
-                <li class="acm-item third-acm">
-                    <article class="accommodation-content flex">
-                        <img src="#" alt="Вариант размещения" class="acm-img">
-                        <span class="acm-price">
-                            от <b>6 505</b>&nbsp;/&nbsp;ночь
-                        </span>
-                        <span class="stars">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                        </span>
-                        <h4>Lagoona mentira piadosa</h4>
-                        <address class="accommodation-adress">Барселона, Испания</address>
-                        <button class="accommodation-button">Номера</button>
-                    </article>
-                </li>
-                <li class="acm-item forth-acm">
-                    <article class="accommodation-content flex">
-                        <img src="#" alt="Вариант размещения" class="acm-img">
-                        <span class="acm-price">
-                            от <b>5 148</b>&nbsp;/&nbsp;ночь
-                        </span>
-                        <span class="stars">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star-empty.png" alt="рейтинг">
-                        </span>
-                        <h4>Lagoona son típicas</h4>
-                        <address class="accommodation-adress">Барселона, Испания</address>
-                        <button class="accommodation-button">Номера</button>
-                    </article>
-                </li>
-                <li class="acm-item fifth-acm">
-                    <article class="accommodation-content flex">
-                        <img src="#" alt="Вариант размещения" class="acm-img">
-                        <span class="acm-price">
-                            от <b>6 457</b>&nbsp;/&nbsp;ночь
-                        </span>
-                        <span class="stars">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star-empty.png" alt="рейтинг">
-                        </span>
-                        <h4>Lagoona&nbsp;empujar&nbsp;la&nbsp;creatividad</h4>
-                        <address class="accommodation-adress">Барселона, Испания</address>
-                        <button class="accommodation-button">Номера</button>
-                    </article>
-                </li>
-                <li class="acm-item sixth-acm">
-                    <article class="accommodation-content flex">
-                        <img src="#" alt="Вариант размещения" class="acm-img">
-                        <span class="acm-price">
-                            от <b>6 824</b>&nbsp;/&nbsp;ночь
-                        </span>
-                        <span class="stars">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star-empty.png" alt="рейтинг">
-                        </span>
-                        <h4>Lagoona&nbsp;suerte&nbsp;siguió&nbsp;siempre</h4>
-                        <address class="accommodation-adress">Барселона, Испания</address>
-                        <button class="accommodation-button">Номера</button>
-                    </article>
-                </li>
-                <li class="acm-item seventh-acm">
-                    <article class="accommodation-content flex">
-                        <img src="#" alt="Вариант размещения" class="acm-img">
-                        <span class="acm-price">
-                            от <b>6 254</b>&nbsp;/&nbsp;ночь
-                        </span>
-                        <span class="stars">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                        </span>
-                        <h4>Lagoona de la guerra</h4>
-                        <address class="accommodation-adress">Барселона, Испания</address>
-                        <button class="accommodation-button">Номера</button>
-                    </article>
-                </li>
-                <li class="acm-item eighth-acm">
-                    <article class="accommodation-content flex">
-                        <img src="#" alt="Вариант размещения" class="acm-img">
-                        <span class="acm-price">
-                            от <b>6 320</b>&nbsp;/&nbsp;ночь
-                        </span>
-                        <span class="stars">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star.png" alt="рейтинг">
-                            <img src="img/i-star-empty.png" alt="рейтинг">
-                        </span>
-                        <h4>Lagoona el retorno</h4>
-                        <address class="accommodation-adress">Барселона, Испания</address>
-                        <button class="accommodation-button">Номера</button>
-                    </article>
-                </li>
-                <li class="acm-item ninth-acm">
-                    <a class="accommodation-link" href="#">Посмотреть все варианты</a>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-
-    </footer>
+        <article class="offer-article right-block">
+          <h3 class="big-offer-name offer-name">
+            Номера категории люкс
+          </h3>
+          <span class="big-offer-price offer-price">от 5 000</span>
+          <a class="offer-more" href="#">Подробнее</a>
+        </article>
+      </div>
+    </section>
+    <section id="about-us">
+      <h2>О нас</h2>
+      <p class="description">
+        Идейные соображения высшего порядка, а также
+        сложившаяся структура организации влечет за собой
+        процесс внедрения и модернизации системы обучения
+        кадров, соответствует насущным потребностям. Идейные
+        соображения высшего порядка, а также дальнейшее
+        развитие различных форм деятельности представляет собой
+        интересный эксперимент проверки системы обучения
+        кадров, соответствует насущным потребностям. Равным
+        образом сложившаяся структура организации требуют
+        определения и уточнения существенных финансовых и
+        административных условий.
+      </p>
+    </section>
+    <section id="services">
+      <h2>Услуги</h2>
+      <div class="services flex">
+        <article class="services-block first-srv-block flex">
+          <h3>
+            <a class="services-link" href="#">Эксклюзивное обслуживание</a>
+          </h3>
+          <p class="services-text">
+            Равным образом постоянный количественный рост
+            и сфера нашей активности
+          </p>
+        </article>
+        <article class="services-block second-srv-block flex">
+          <h3>
+            <a class="services-link" href="#">Аренда банкетных залов</a>
+          </h3>
+          <p class="services-text">
+            Значимость этих проблем настолько очевидна,
+            что дальнейшее развитие различных форм
+          </p>
+        </article>
+        <article class="services-block third-srv-block flex">
+          <h3>
+            <a class="services-link" href="#">Сауны, бассейны, бани, фитнес-залы</a>
+          </h3>
+          <p class="services-text">
+            Не следует, однако забывать, что начало
+            повседневной работы по формированию позиции
+          </p>
+        </article>
+        <article class="services-block forth-srv-block flex">
+          <h3>
+            <a class="services-link" href="#">Охраняемые автомобильные стоянки</a>
+          </h3>
+          <p class="services-text">
+            Не следует, однако забывать, что начало
+            повседневной работы по формированию позиции
+          </p>
+        </article>
+      </div>
+    </section>
+    <section id="advantages">
+      <h2>Преимущества</h2>
+      <ul class="container flex">
+        <li class="adv-block first-adv">
+          <p class="adv-text">
+            Идейные соображения высшего порядка,
+            а&nbsp;также постоянный количественный рост
+          </p>
+        </li>
+        <li class="adv-block second-adv">
+          <p class="adv-text">
+            Значимость этих проблем настолько очевидна,
+            что вопрос остается открытым
+          </p>
+        </li>
+        <li class="adv-block third-adv">
+          <p class="adv-text">
+            Таким образом реализация плановых заданий
+            играет важную роль для понимания
+          </p>
+        </li>
+        <li class="adv-block fourth-adv">
+          <p class="adv-text">
+            Повседневная практика показывает, что
+            сложившаяся структура организации
+          </p>
+        </li>
+        <li class="adv-block fifth-adv">
+          <p class="adv-text">
+            Равным образом рамки и&nbsp;место обучения
+            кадров способствует подготовки сотрудника
+          </p>
+        </li>
+        <li class="adv-block sixth-adv">
+          <p class="adv-text">
+            Консультация с&nbsp;активом влечёт
+            за&nbsp;собой процесс внедрения услуг нашего
+            сервиса
+          </p>
+        </li>
+        <li class="adv-block seventh-adv">
+          <p class="adv-text">
+            Повседневная практика показывает, что
+            дальнейшее развитие различных
+          </p>
+        </li>
+        <li class="adv-block eighth-adv">
+          <p class="adv-text">
+            Значимость этого настолько очевидна, что
+            консультация наших экспертов помогает
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section id="accommodation">
+      <div class="accommodation-content">
+        <h2>Размещение</h2>
+        <ul class="accommodation-list flex">
+          <li class="acm-item first-acm">
+            <article class="accommodation-content flex">
+              <img src="#" alt="Lagoona española" class="acm-img" />
+              <p>
+                <span class="acm-price">
+                  от
+                  <b>4 698</b>&nbsp;/&nbsp;ночь
+                </span>
+                <span class="stars">
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star-empty.png" alt="рейтинг" />
+                </span>
+              </p>
+              <h4>Lagoona española</h4>
+              <address class="accommodation-adress">
+                Барселона, Испания
+              </address>
+              <button class="accommodation-button button">
+                Номера
+              </button>
+            </article>
+          </li>
+          <li class="acm-item second-acm">
+            <article class="accommodation-content flex">
+              <img src="#" alt="Вариант размещения" class="acm-img" />
+              <p>
+                <span class="acm-price">
+                  от
+                  <b>6 320</b>&nbsp;/&nbsp;ночь
+                </span>
+                <span class="stars">
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                </span>
+              </p>
+              <h4>Lagoona mentira piadosa</h4>
+              <address class="accommodation-adress">
+                Барселона, Испания
+              </address>
+              <button class="accommodation-button button">
+                Номера
+              </button>
+            </article>
+          </li>
+          <li class="acm-item third-acm">
+            <article class="accommodation-content flex">
+              <img src="#" alt="Вариант размещения" class="acm-img" />
+              <p>
+                <span class="acm-price">
+                  от
+                  <b>6 505</b>&nbsp;/&nbsp;ночь
+                </span>
+                <span class="stars">
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                </span>
+              </p>
+              <h4>Lagoona mentira piadosa</h4>
+              <address class="accommodation-adress">
+                Барселона, Испания
+              </address>
+              <button class="accommodation-button button">
+                Номера
+              </button>
+            </article>
+          </li>
+          <li class="acm-item forth-acm">
+            <article class="accommodation-content flex">
+              <img src="#" alt="Вариант размещения" class="acm-img" />
+              <p>
+                <span class="acm-price">
+                  от
+                  <b>5 148</b>&nbsp;/&nbsp;ночь
+                </span>
+                <span class="stars">
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star-empty.png" alt="рейтинг" />
+                </span>
+              </p>
+              <h4>Lagoona son típicas</h4>
+              <address class="accommodation-adress">
+                Барселона, Испания
+              </address>
+              <button class="accommodation-button button">
+                Номера
+              </button>
+            </article>
+          </li>
+          <li class="acm-item fifth-acm">
+            <article class="accommodation-content flex">
+              <img src="#" alt="Вариант размещения" class="acm-img" />
+              <p>
+                <span class="acm-price">
+                  от
+                  <b>6 457</b>&nbsp;/&nbsp;ночь
+                </span>
+                <span class="stars">
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star-empty.png" alt="рейтинг" />
+                </span>
+              </p>
+              <h4>
+                Lagoona&nbsp;empujar&nbsp;la&nbsp;creatividad
+              </h4>
+              <address class="accommodation-adress">
+                Барселона, Испания
+              </address>
+              <button class="accommodation-button button">
+                Номера
+              </button>
+            </article>
+          </li>
+          <li class="acm-item sixth-acm">
+            <article class="accommodation-content flex">
+              <img src="#" alt="Вариант размещения" class="acm-img" />
+              <p>
+                <span class="acm-price">
+                  от
+                  <b>6 824</b>&nbsp;/&nbsp;ночь
+                </span>
+                <span class="stars">
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star-empty.png" alt="рейтинг" />
+                </span>
+              </p>
+              <h4>
+                Lagoona&nbsp;suerte&nbsp;siguió&nbsp;siempre
+              </h4>
+              <address class="accommodation-adress">
+                Барселона, Испания
+              </address>
+              <button class="accommodation-button button">
+                Номера
+              </button>
+            </article>
+          </li>
+          <li class="acm-item seventh-acm">
+            <article class="accommodation-content flex">
+              <img src="#" alt="Вариант размещения" class="acm-img" />
+              <p>
+                <span class="acm-price">
+                  от
+                  <b>6 254</b>&nbsp;/&nbsp;ночь
+                </span>
+                <span class="stars">
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                </span>
+              </p>
+              <h4>Lagoona de la guerra</h4>
+              <address class="accommodation-adress">
+                Барселона, Испания
+              </address>
+              <button class="accommodation-button button">
+                Номера
+              </button>
+            </article>
+          </li>
+          <li class="acm-item eighth-acm">
+            <article class="accommodation-content flex">
+              <img src="#" alt="Вариант размещения" class="acm-img" />
+              <p>
+                <span class="acm-price">
+                  от
+                  <b>6 320</b>&nbsp;/&nbsp;ночь
+                </span>
+                <span class="stars">
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star.png" alt="рейтинг" />
+                  <img src="img/i-star-empty.png" alt="рейтинг" />
+                </span>
+              </p>
+              <h4>Lagoona el retorno</h4>
+              <address class="accommodation-adress">
+                Барселона, Испания
+              </address>
+              <button class="accommodation-button button">
+                Номера
+              </button>
+            </article>
+          </li>
+          <li class="acm-item ninth-acm">
+            <a class="accommodation-link" href="#">Посмотреть все варианты</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
 </body>
 
 </html>
