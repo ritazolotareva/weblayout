@@ -1,6 +1,5 @@
 .flex {
   display: flex;
-  align-items: center;
 }
 
 /* header */
@@ -14,6 +13,7 @@
 
 .navigation-list {
   flex-wrap: wrap;
+  align-items: center;
   justify-content: flex-start;
   width: 66.6%;
   min-height: 40px;
@@ -23,6 +23,7 @@
 .header-button {
   width: 33.3%;
   min-height: 70px;
+  align-items: center;
   justify-content: space-around;
   min-width: 100px;
 }
@@ -34,8 +35,8 @@
   gap: 24px;
 }
 
-.offer-article {
-  width: 573px;
+.blocks-wrapper {
+  flex: 1 1 48%;
 }
 
 /* about us */
@@ -50,11 +51,11 @@
 }
 
 .services-block {
+  flex: 1 1 48%;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
-  width: 573px;
-  min-height: 130px;
+  min-height: 330px;
 }
 
 /* advantages */
@@ -66,9 +67,9 @@
 }
 
 .adv-block {
+  flex: 1 1 15%;
   align-items: flex-start;
-  width: 276px;
-  min-height: 276px;
+  min-height: 128px;
 }
 
 /* accommodation */
@@ -80,7 +81,7 @@
 }
 
 .acm-item {
-  width: 374px;
+  flex: 1 1 28%;
   min-height: 440px;
 }
 

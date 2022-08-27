@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Muller';
 	src:local('Muller Light'),
-      url('/fonts/MullerLight.woff2'), format('woff2'),
+      url('/fonts/MullerLight.woff2') format('woff2'),
 		  url('fonts/MullerLight.woff') format('woff');
 	font-weight: 300;
 	font-style: normal;
@@ -10,8 +10,8 @@
 @font-face {
 	font-family: 'Muller';
 	src:local('Muller Regular'),
-      url('fonts/MullerRegular.woff2'), format('woff2'),
-		  url('fonts/MullerRegular.woff') format('woff');
+      url('/fonts/MullerRegular.woff2') format('woff2'),
+		  url('/fonts/MullerRegular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -19,17 +19,17 @@
 @font-face {
 	font-family: 'Muller';
 	src:local('Muller Medium'),
-      url('fonts/MullerMedium.woff2'), format('woff2'),
-		  url('fonts/MullerMedium.woff') format('woff');
+      url('/fonts/MullerMedium.woff2') format('woff2'),
+		  url('/fonts/MullerMedium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Muller';
+	font-family: 'Muller Bold';
 	src:local('Muller Bold'),
-        url('fonts/MullerBold.woff2'), format('woff2'),
-		url('fonts/MullerBold.woff') format('woff');
+      url('/fonts/MullerBold.woff2') format('woff2'),
+		  url('/fonts/MullerBold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -43,45 +43,12 @@ html {
   }
 
 body {
+  padding: 2rem 1rem;
   width: 1170px;
   font-family: 'Muller', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, p{
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2 {
-  margin-bottom: 20px;
-  padding-left: 45px;
-  font-family: 'Muller Regular', sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 40px;
-  color: #333;
-}
-
-h3 {
-  padding-left: 45px;
-}
-
-button {
+.button {
     margin: 0;
     background-color: transparent;
     cursor: pointer;
@@ -94,17 +61,30 @@ button {
     line-height: 16px;
   }
 
-header {
+.section {
   margin-bottom: 70px;
-  padding-top: 30px;
 }
 
-section {
-  margin-bottom: 70px;
+.section-title {
+  margin: 0;
+  padding-left: 45px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.section-wrapper {
+  padding-top: 20px;
 }
 
 /* header */
+.header {
+  margin-bottom: 70px;
+}
+
 .header-top {
+  align-items: center;
   margin-bottom: 30px;
   min-height: 55px;
 }
@@ -117,9 +97,9 @@ section {
 }
 
 .log-in {
-  /* display: inline-flex;
-  align-items: center; */
-  padding-left: 20px;
+  display: inline-flex;
+  align-items: center left;
+  gap: 10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -144,8 +124,8 @@ section {
   color: #666666;
 }
 
-.button {
-  justify-content: space-around;
+.header-button {
+  padding-right: 45px;
 }
 
 /* offers */
@@ -153,13 +133,33 @@ section {
   min-height: 540px;
 }
 
+.offer-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 45px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+ .offer-article {
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 45px;
+ }
+
+ .article-addition {
+  flex-direction: column;
+  justify-content: space-between;
+ }
+
 .left-blocks {
   flex-direction: column;
   gap: 24px;
 }
 
 .left-top-block {
-  /* margin-bottom: 24px; */
   min-height: 258px;
   border-radius: 15px;
   background-image: url(../img/darken.png), url(../img/ofr1.png);
@@ -178,6 +178,7 @@ section {
 }
 
 .right-block {
+  justify-content: flex-end;
   min-height: 540px;
   border-radius: 15px;
   background-image: url(../img/ofr3.png);
@@ -187,23 +188,23 @@ section {
 }
 
 .offer-name {
-  padding-top: 40px;
+  margin: 0;
   margin-bottom: 15px;
   width: 420px;
+  font-weight: 700;
   font-size: 40px;
   line-height: 40px;
   color: #FFFFFF;
 }
 
 .big-offer-name {
-  padding-top: 212px;
   font-size: 60px;
   line-height: 60px;
 }
 
 .offer-price {
   display: block;
-  padding: 0 0 47px 45px;
+  margin-bottom: 47px;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -212,6 +213,7 @@ section {
 }
 
 .big-offer-price {
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
 }
@@ -219,24 +221,31 @@ section {
 .offer-more {
   display: inline-flex;
   align-items: center;
-  padding-left: 45px;
-  margin-bottom: 40px;
+  gap: 5px;
   font-size: 16px;
   line-height: 16px;
   color: #F0BF5F;
 }
 
-/* about us */
+.right-block-more {
+  margin-bottom: 40px;
+}
 
+/* about us */
 .description {
+  margin: 0;
   width: 888px;
   font-size: 16px;
   line-height: 32px;
 }
 
 /* services */
+.servises-article-content {
+  padding: 190px 126px 35px 45px;
+}
+
 .services-block {
-  padding-top: 190px;
+  justify-content: flex-start;
   border-radius: 15px;
   background-color: white;
   background-repeat: no-repeat;
@@ -247,20 +256,23 @@ section {
 .services-link {
   display: inline-flex;
   align-items: center;
-  padding-right: 15px;
+  gap: 10px;
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
   color: #CC9933;
 }
 
+.servises-title {
+  margin: 0;
+}
+
 .services-text {
+  margin: 0;
   width: 402px;
-  padding-left: 45px;
   font-size: 16px;
   line-height: 32px;
   color: black;
-  margin-bottom: 35px;
 }
 
 .first-srv-block {
@@ -281,50 +293,51 @@ section {
 
 /* advantages */
 .adv-block {
-  background-color: white;
+  padding: 116px 42px 32px 45px;
   border-radius: 15px;
+  background-color: white;
   background-repeat: no-repeat;
   background-position: 45px 30px;
 }
 
 .adv-text {
-  width: 190px;
+  margin: 0;
+  /* width: 190px; */
   min-height: 128px;
-  padding: 116px 42px 32px 45px;
   font-size: 16px;
   line-height: 32px;
 }
 
 .first-adv {
-  background-image: url(img/bathtub.svg);
+  background-image: url(/img/bathtub.svg);
 }
 
 .second-adv {
-  background-image: url(img/hanger.svg);
+  background-image: url(/img/hanger.svg);
 }
 
 .third-adv {
-  background-image: url(img/heating.svg);
+  background-image: url(/img/heating.svg);
 }
 
 .fourth-adv {
-  background-image: url(img/hotel-key.svg);
+  background-image: url(/img/hotel-key.svg);
 }
 
 .fifth-adv {
-  background-image: url(img/parking.svg);
+  background-image: url(/img/parking.svg);
 }
 
 .sixth-adv {
-  background-image: url(img/reception.svg);
+  background-image: url(/img/reception.svg);
 }
 
 .seventh-adv {
-  background-image: url(img/security-box.svg);
+  background-image: url(/img/security-box.svg);
 }
 
 .eighth-adv {
-  background-image: url(img/swimming-pool.svg);
+  background-image: url(/img/swimming-pool.svg);
 }
 
 /* accommodation */
@@ -335,7 +348,7 @@ section {
 }
 
 .article-content {
-  min-height: 200px;
+  min-height: 190px;
   padding-left: 45px;
   padding-top: 35px;
 }
@@ -346,7 +359,8 @@ section {
   color: #999999;
 }
 
-h4 {
+.hotel-name {
+  margin: 0;
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -370,6 +384,12 @@ h4 {
   justify-content: space-between;
 }
 
+.acm-cost {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
 .accommodation-pic {
   background-repeat: no-repeat;
   background-position: center;
@@ -377,18 +397,20 @@ h4 {
 }
 
 .more-acm {
-  background-image: url(img/acm9.png);
+  background-image: url(/img/acm9.png);
+  background-size: cover;
 }
 
 .accommodation-link {
   display: inline-flex;
   align-items: center;
-  position: relative;
-  top: 374px;
-  left: 54px;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 370px;
+  width: 374px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 200%;
+  line-height: 40px;
   color: white;
 }
 
